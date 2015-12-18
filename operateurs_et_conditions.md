@@ -161,3 +161,15 @@ Si le résultat de l'expression est :
 * `> 0` on passe dans la boucle
 * `== 0` on sort de la boucle
 
+
+
+### `do` ... `while`
+```c
+do {
+	// ...
+} while (expression);
+```
+
+Attention à ne pas oublier le `;` !
+
+Le bloc d'instructions est évaluée avant l'expression, l'intérêt de cette structure est de passer toujours **au moins une fois** dans la boucle.

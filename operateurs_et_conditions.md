@@ -56,13 +56,13 @@ Attention, les syntaxes `variable++` et `++variable` n'ont pas les même signifi
 ### Opérateurs relationnels
 
 | opérateur | signification |
-|-|-|
-|`==`| égalité |
-|`!=`| différent |
-|`>`| supérieur |
-|`<`| inférieur |
-|`<=`| inférieur ou égal |
-|`>=`| supérieur ou égal |
+|-----------|---------------|
+| `==` | égalité |
+| `!=` | différent |
+| `>`  | supérieur |
+| `<`  | inférieur |
+| `<=` | inférieur ou égal |
+| `>=` | supérieur ou égal |
 
 ### Opérateurs logique
 

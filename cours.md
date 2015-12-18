@@ -13,13 +13,17 @@ jeux, ...)
 -   Maintenance des programmes facilité (sauf si tu code comme un porc connard)
 -   Portabilité par compilation succéssive (recompiler pour chaque architecture)
 -   Language de haut niveau
-   **Différence language bas niveau - Haut niveau**
 
-    **haut**
+**Différence language bas niveau - Haut niveau**
+```
+    haut niveau
+    
     Language humain : "if line is ok"
     Language C : "if(line == ok) {}"
     Binaire
-    **bas**
+    
+    bas niveau
+```
 -   D'autres languages héritent du C
 
 Mon premier programme
@@ -178,4 +182,26 @@ Permet de faire la même chose que `getc(stdin)`
 ```c
 char carac;
 carac = getchar()
+```
+
+### Fonction `putc()`
+
+Permet d'afficher un caractère sur un flux
+
+#### Exemple
+```c
+char carac = 'b';
+putc(carac, stdout);
+// écrit b sur la sortie standard
+```
+
+#### Fonction `putchar()`
+
+Comme `putc()` mais uniquement sur `stdout`
+
+#### Exemple
+```c
+char carac = 'b';
+putc(carac);
+// écrit b sur la sortie standard
 ```

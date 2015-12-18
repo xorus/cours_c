@@ -19,4 +19,16 @@ A = B = C = D = 0; // tout le monde a zéro ! :D
 
 ### Conversion (cast)
 
-Permet
+Permet de modifier le type d'une donnée
+
+`(type) variable`
+
+#### Exemple
+```c
+float pi = 3.14;
+int partie_entiere;
+
+partie_entiere = (int) pi;
+// partie_entiere vaudra 3,
+// faire (int) convertira mon float en int, supprimant les décimales
+```

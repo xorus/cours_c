@@ -141,3 +141,23 @@ if (valeur > 10) {
 
 **expression2** est évaluée à chaque itération : c'est la condition d'arrêt
 
+Si son résultat vaut 0 ==\> on sort de la boucle !
+
+**expression3** n'est pas évaluée au premier passage
+
+Évaluée *avant* d'évaluer l'expression 2 !
+
+### `while`
+```c
+while (expression) {
+	// ...
+}
+```
+
+L'évaluation de l'expression détermine le passage ou non la boucle.
+
+Si le résultat de l'expression est : 
+
+* `> 0` on passe dans la boucle
+* `== 0` on sort de la boucle
+

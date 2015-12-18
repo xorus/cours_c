@@ -67,10 +67,10 @@ Attention, les syntaxes `variable++` et `++variable` n'ont pas les même signifi
 ### Opérateurs logique
 
 | opérateur | signification |
-|-|-|
-|`&&`| ET |
-|`\|\|`| OU |
-|`!`| NON |
+|-----------|---------------|
+| `&&`       | ET |
+| `\|\|`     | OU |
+| `!`        | NON |
 
 ### `if`, `else`
 

@@ -93,3 +93,51 @@ if (condition1) {
 	// si rien n'est vrai
 }
 ```
+
+### `switch`
+
+```c
+int age = 29;
+
+switch (age) {
+	case 18: 
+		// mon code age = 18
+	break;
+	case 20: 
+		// mon code age = 20
+	break;
+	default:
+		// pour tous les autres cas
+	break;
+}
+```
+
+**Le default est obligatoire** : on peut avoir aucun case mais il faut un default
+
+### Ternaire
+
+```c
+(condition_a_evaluer) ? action si vrai : action si faux;
+```
+
+#### Exemple
+```c
+int resultat, valeur = 12;
+
+resultat = (valeur > 10) ? 4 : 3;
+// cette ligne revient à faire :
+if (valeur > 10) {
+	resultat = 4;
+} else {
+	resultat = 3;
+}
+```
+
+## Boucles
+### `for`
+`for(expression1, expression2, expression3)`
+
+**expression1** n'est traité qu'une seule fois : elle permet généralement d’initialiser une ou plusieurs variables
+
+**expression2** est évaluée à chaque itération : c'est la condition d'arrêt
+

@@ -19,3 +19,10 @@ int var = tab[2];
 ```
 Ici, var prend la valeur de la troisième entrée du tableau `tab`.
 
+
+```c
+tab[2] = 45;
+printd("%d", tab[2]); // affiche 45
+```
+
+

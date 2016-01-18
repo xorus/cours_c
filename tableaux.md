@@ -71,4 +71,31 @@ char str[4] = "texte";
 ```
 En effet, on essaye de mettre une chaîne de taille 6 dans un tableau de taille 4 : les caractères en trop sont `e` et `\0`. (rappel : `"texte"` <=> `{'t', 'e', 'x', 't', 'e', '\0'}`)
 
+## Gestion des chaînes de caractères
+### string.h
+```c
+#include <string.h>
+```
+#### **strlen** : renvoie la longueur d'une chaine
+C'est aussi le **nombre d'octets** occupé par cette chaine. En C, 1 `char` = 1 octet
 
+```c
+size_t taille = strlen(ma_chaine)
+```
+
+**Attention** : Strlen ne renvoie pas un `int` mais un `size_t`.
+
+`size_t` est un **type de données** défini dans la librairie standard, il peut **varier** d'une machine à l'autre.
+
+
+#### **strcpy** : copie une chaîne de caractère
+Usage :
+```c
+strcpy(chaîne_destination, chaîne_origine);
+```
+Exemple :
+```c
+char origine[6] = "Texte";
+char destination[6];
+strcpy(destination, origine);
+```

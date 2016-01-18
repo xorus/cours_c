@@ -32,4 +32,12 @@ int var_a = tab;
 ```
 **Le nom du tableau pointe sur son premier élément** : donc, `var_a` vaudra ici `tab[0]`;
 
+### Exercice
+Déclarer un tableau de 10 entiers et l'initialiser à l'aide d'une boucle
+```c
+int tab[10], i;
 
+for (i = 0; i < 10; i++) {
+	tab[i] = 0;
+}
+```

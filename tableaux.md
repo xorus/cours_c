@@ -2,8 +2,10 @@
 title: Langage C avancé : Tableaux
 author: M. Delon
 ---
-Tableaux
+Tableaux et chaînes de caractères
 ----------
+
+## Tableaux
 
 Les tableaux sont des ensembles de variables de -même types, stockés dans un **espace contigu** en mémoire.
 
@@ -41,3 +43,11 @@ for (i = 0; i < 10; i++) {
 	tab[i] = 0;
 }
 ```
+
+## Chaînes de caractère
+En C, une chaîne de caractères et représentée par un tableau de caractères terminée par un caractère null : `\0`.
+
+```c
+char maChaine[7] = {'H','e','l','l','o','!','\0'};
+```
+**Attention à ne pas oublier le \0 lors de ce type d'initialisation de chaîne**

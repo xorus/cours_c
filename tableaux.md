@@ -51,3 +51,24 @@ En C, une chaîne de caractères et représentée par un tableau de caractères 
 char maChaine[7] = {'H','e','l','l','o','!','\0'};
 ```
 **Attention à ne pas oublier le \0 lors de ce type d'initialisation de chaîne**
+
+```c
+char maChaine[7] = "Hello!";
+```
+Et oui, `""` représente un chaîne de caractères, qui est un tableau !
+Le \0 est ajouté automatiquement, magique !
+
+```c
+char maChaine[] = "Hello!";
+```
+La taille du tableau n'est pas connue à l'avance, on peut **pas** la récupérer sans parcourir le tableau jusqu'à tomber sur le `\0`. (il n'y à pas d'attribut qui donne la taille d'un tableau)
+
+---
+
+**Cela ne fonctionne pas :**
+```c
+char str[4] = "texte";
+```
+En effet, on essaye de mettre une chaîne de taille 6 dans un tableau de taille 4 : les caractères en trop sont `e` et `\0`. (rappel : `"texte"` <=> `{'t', 'e', 'x', 't', 'e', '\0'}`)
+
+

@@ -52,7 +52,7 @@ int main(void) {
 ## 6.
 ```c
 int i, somme = 0;
-for (i = 1; i <= 100; i += 2) {
+for (i = 0; i <= 100; i += 2) {
 	somme += i;
 }
 ```

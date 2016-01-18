@@ -23,6 +23,13 @@ Ici, var prend la valeur de la troisième entrée du tableau `tab`.
 ```c
 tab[2] = 45;
 printd("%d", tab[2]); // affiche 45
+int var_a = tab[0];
 ```
+
+Alternative pour assigner le premier élément du tableau à une variable :
+```c
+int var_a = tab;
+```
+**Le nom du tableau pointe sur son premier élément** : donc, `var_a` vaudra ici `tab[0]`;
 
 

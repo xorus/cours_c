@@ -99,3 +99,17 @@ char origine[6] = "Texte";
 char destination[6];
 strcpy(destination, origine);
 ```
+
+## Lire et écrire une chaîne de caractères
+```c
+// lecture
+char array_ch[80];
+scanf("%s", array_ch);
+
+// affichage
+printf("%s", array_ch);
+printf("%s\n", array_ch);
+// équivalent à :
+puts(array_ch);
+```
+`puts` remplace le caractère de fin de la chaîne par un `\n`.

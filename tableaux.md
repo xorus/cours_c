@@ -34,6 +34,11 @@ int var_a = tab;
 ```
 **Le nom du tableau pointe sur son premier élément** : donc, `var_a` vaudra ici `tab[0]`;
 
+Taille dynamique d'un tableau de int :
+```c
+int size = sizeof(tab) / sizeof(int);
+```
+
 ### Exercice
 Déclarer un tableau de 10 entiers et l'initialiser à l'aide d'une boucle
 ```c

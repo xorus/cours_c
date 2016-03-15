@@ -27,7 +27,11 @@ p_maFuckingVar = &maFuckingVar;
 Exemple :
 ```c
 int a = 2;
-int *p = &a;
-*p = 3;
+int *p = &a; // je crée un pointeur qui référence l'adresse de a
+*p = 3; // j'affecte la valeur 3 dans mon pointeur
 printf("%d", a); // affichera 3
 ```
+
+## Opérateurs arithmétiques
+
+`+` et `-` : si on ajoute une valeur à un pointeur, celui-ci se déplace sur le **bloc** mémoire suivant.

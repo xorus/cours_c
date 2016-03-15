@@ -106,3 +106,11 @@ int *pentiers = malloc(6 * sizeof(int));
 ```
 On obtient un espace permettant de stocker 6 nombres entiers.
 
+**Tout espace mémoire alloué doit être libéré**
+
+`free()` est la fonction permettant de libérer l'espace mémoire.
+
+```c
+free(p);
+```
+Va libérer l'espace mémoire référencé par le pointeur p;

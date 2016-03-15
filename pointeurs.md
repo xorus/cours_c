@@ -15,7 +15,7 @@ type *p_var;
 Pro tip : préfixer par un `p` aide à retrouver facilement ses pointeurs quand on lit son code.
 
 
-## Affectation
+### Affectation
 
 Pour récupérer l'adresse mémoire d'une variable, on utilise le symbole `&` :
 ```c
@@ -35,3 +35,11 @@ printf("%d", a); // affichera 3
 ## Opérateurs arithmétiques
 
 `+` et `-` : si on ajoute une valeur à un pointeur, celui-ci se déplace sur le **bloc** mémoire suivant.
+
+Ça peut être utile pour traverser par exemple un tableau, vu que ce dernier est un espace continu en mémoire.
+
+```c
+int a = 4;
+int *pa = &a;
+```
+Donc, `pa + 1` représente le bloc mémoire suivant, ici les 4 octets suivants en mémoire

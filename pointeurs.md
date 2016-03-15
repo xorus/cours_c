@@ -53,3 +53,38 @@ Une déclaration d'un tableau de N éléments revient à réserver un espace mé
 - `*tab` permet de récupérer la valeur du premier élément
 - `tab + 1` représente l'adresse du deuxième élément du tableau
 - `*(tab + 1)` valeur du deuxième élément
+
+# Passage par valeur vs par référence
+
+## Par valeur
+Lors de l'appel de la fonction, on lui transmet une copie des valeurs.
+```c
+void maFonction(int a, int b) {
+	a = 100 * a;
+	b = b / 3;
+}
+
+main () {
+	int x = 10, y = 20;
+	maFonction(x, y);
+	printf("%d, %d", x, y);
+}
+```
+
+## Par référence
+Lors de l'appel de la fonction, on lui transmet les adresses des variables contenant les valeurs.
+
+```c
+void maFonction(int *a, int *b) {
+	*a = 100 * (*a);
+	*b = (*b) / 3;
+}
+
+main () {
+	int x = 10, y = 20;
+	maFonction(&x, &y);
+	printf("%d, %d", x, y);
+}
+```
+
+# Allocation dynamique de mémoire

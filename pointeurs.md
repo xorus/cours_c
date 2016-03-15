@@ -88,3 +88,11 @@ main () {
 ```
 
 # Allocation dynamique de mémoire
+
+Pour allouer de la mémoire en C, on utilise la fonction `malloc()`
+
+* Elle réserve un nombre d'octets contigus en mémoire
+* Elle renvoie un pointeur sur cet espace commun
+* Elle renvoie NULL sis échec lors de l'allocation
+
+**Attention !** Il faut toujours tester la non nullité avant de manipuler le pointeur.

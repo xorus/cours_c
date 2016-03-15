@@ -96,3 +96,8 @@ Pour allouer de la mémoire en C, on utilise la fonction `malloc()`
 * Elle renvoie NULL sis échec lors de l'allocation
 
 **Attention !** Il faut toujours tester la non nullité avant de manipuler le pointeur.
+
+Exemple :
+```c
+int *pentiers = malloc(6 * sizeof(int));
+```

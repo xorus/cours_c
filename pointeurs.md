@@ -43,3 +43,12 @@ int a = 4;
 int *pa = &a;
 ```
 Donc, `pa + 1` représente le bloc mémoire suivant, ici les 4 octets suivants en mémoire
+
+# Tableaux
+
+Une déclaration d'un tableau de N éléments revient à réserver un espace mémoire permettant de stocker N variables de même type sur des espaces contigus.
+
+- `int tab[2]` permet de réserver l'espace pour stocker deux entiers
+- En réalité, `tab` contient le premier élément (`tab[0]`)
+- `*tab` permet de récupérer la valeur du premier élément
+- `tab + 1` représente l'adresse du deuxième élément du tableau

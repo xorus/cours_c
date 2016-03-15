@@ -89,6 +89,8 @@ main () {
 
 ## Allocation dynamique de mémoire
 
+Se trouve dans la librairie standard `stdlib`.
+
 Pour allouer de la mémoire en C, on utilise la fonction `malloc()`
 
 * Elle réserve un nombre d'octets contigus en mémoire
@@ -99,5 +101,8 @@ Pour allouer de la mémoire en C, on utilise la fonction `malloc()`
 
 Exemple :
 ```c
+#include <stdlib.h>
 int *pentiers = malloc(6 * sizeof(int));
 ```
+On obtient un espace permettant de stocker 6 nombres entiers.
+

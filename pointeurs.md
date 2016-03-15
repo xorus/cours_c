@@ -23,3 +23,11 @@ int maFuckingVar = 1965;
 int *p_maFuckingVar; // variable non initialisée
 p_maFuckingVar = &maFuckingVar;
 ```
+
+Exemple :
+```c
+int a = 2;
+int *p = &a;
+*p = 3;
+printf("%d", a); // affichera 3
+```

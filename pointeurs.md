@@ -87,7 +87,7 @@ main () {
 }
 ```
 
-# Allocation dynamique de mémoire
+## Allocation dynamique de mémoire
 
 Pour allouer de la mémoire en C, on utilise la fonction `malloc()`
 

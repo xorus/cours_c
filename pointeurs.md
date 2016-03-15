@@ -52,3 +52,4 @@ Une déclaration d'un tableau de N éléments revient à réserver un espace mé
 - En réalité, `tab` contient le premier élément (`tab[0]`)
 - `*tab` permet de récupérer la valeur du premier élément
 - `tab + 1` représente l'adresse du deuxième élément du tableau
+- `*(tab + 1)` valeur du deuxième élément

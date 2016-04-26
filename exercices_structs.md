@@ -83,3 +83,67 @@ void ex02() {
 }
 ```
 
+# Ex 3
+```c
+typedef struct {
+    int x, y, cote;
+} t_carre;
+
+typedef struct {
+    int x, y, longueur, largeur;
+} t_rectangle;
+```
+
+```c
+#include <stdio.h>
+#include <malloc.h>
+#include "exo.h"
+
+void carre_creer(t_carre *self, int x, int y, int longueur_cote) {
+    self->x = x;
+    self->y = y;
+    self->cote = longueur_cote;
+}
+
+void carre_detruire(t_carre *self) {
+    free(self);
+}
+
+void carre_afficher(t_carre *self) {
+    printf("Carré:\n");
+    printf("haut gauche : (%d; %d)\n", self->x, self->y);
+    printf("haut droite : (%d; %d)\n", self->x + self->cote, self->y);
+    printf(" bas gauche : (%d; %d)\n", self->x + self->cote, self->y + self->cote);
+    printf(" bas droite : (%d; %d)\n", self->x, self->y + self->cote);
+}
+
+void rectangle_afficher(t_rectangle *self) {
+    printf("Rect:\n");
+    printf("haut gauche : (%d; %d)\n", self->x, self->y);
+    printf("haut droite : (%d; %d)\n", self->x + self->largeur, self->y);
+    printf(" bas gauche : (%d; %d)\n", self->x + self->largeur, self->y + self->longueur);
+    printf(" bas droite : (%d; %d)\n", self->x, self->y + self->longueur);
+}
+
+void carre_aire(t_carre *self) {
+    printf("Aire du carré : %d\n", self->cote * self->cote);
+}
+
+void rectangle_aire(t_rectangle *self) {
+    printf("Aire du rectangle : %d\n", self->longueur * self->largeur);
+}
+
+void ex03() {
+    t_carre* carre = malloc(sizeof(t_carre));
+    t_rectangle rectangle = {10, 4, 10, 5};
+
+    carre_creer(carre, 10, 15, 50);
+    carre_afficher(carre);
+    rectangle_afficher(&rectangle);
+
+    carre_aire(carre);
+    rectangle_aire(&rectangle);
+
+    carre_detruire(carre);
+}
+```

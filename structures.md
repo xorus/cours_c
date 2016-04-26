@@ -98,8 +98,12 @@ BAM! Pointeur sur une structure, le futur, c'est maintenant.
 Pour envoyer une structure à une fonction, on utilise l'adresse de cette structure :
 
 ```c
-void initialiserStructure(Point* point) {
+void initialiserStructure(Point* pPoint) {
 	// initialiser le corps de la structure
+	// Pour agir sur un élément d'une structure passée en pointeur :
+	(*pPoint).x = 0;
+	// Parce que c'est pas très pratique comme écriture, on peut faire ça :
+	pPoint->x = 0;
 }
 
 int main() {
@@ -108,3 +112,4 @@ int main() {
 }
 ```
 
+**Attention** : l'opérateur `->` n'existe que dans le cas d'un pointeur sur une structure.

@@ -66,6 +66,9 @@ typedef struct Point Point;
 
 int main() {
 	Point point_a; // struct Point ==> le type de la donnée "point_a"
+	
+	// Utilisation : affectation
+	point_a.x = 14;
+	point_a.y = 21;
 }
 ```
-

@@ -1,7 +1,3 @@
----
-title: Langage C avancé : Tableaux
-author: M. Delon
----
 Structures
 ----------
 
@@ -12,6 +8,8 @@ Les structures sont définies dans le fichier `.h`.
 
 **Exemple**
 
+Le nom de la structure commence toujours par une **majuscule**.
+
 ```c
 struct MaSuperStructure {
 	int variable1; // attention à ne pas oublier les points virguuuul
@@ -21,4 +19,3 @@ struct MaSuperStructure {
 }; // <--- surtout ce point virgule là, on l'oublie tout le temps.
 ```
 
-Le nom de la structure commence toujours par une **majuscule**.

@@ -18,10 +18,52 @@ struct MaSuperStructure {
 	char[] jeSuisUnFou;
 }; // <--- surtout ce point virgule là, on l'oublie tout le temps.
 ```
+
+### Exemple : point
+
+#### Déclaration simple
+
+**Dans le fichier `.h`**
+
 ```c
 struct Point {
 	int x;
 	int y;
 };
+```
+
+**Dans le fichier `.c`**
+
+```c
+#include "monfichier.h"
+
+int main() {
+	struct Point point_a; // struct Point ==> le type de la donnée "point_a"
+}
+```
+
+#### Avec les raccourcis des `typedef`
+
+L'instruction `typedef` permet de créer un alias à partir d'un type de données.
+
+Syntaxe : `typedef TYPE_A_REMPLACER ALIAS`, ici par exemple `typedef struct Point Point`.
+
+**Dans le `.h`**
+
+```c
+typedef struct Point {
+	int x;
+	int y;
+} Point;
+```
+
+**Dans le fichier `.c`**
+
+```c
+#include "monfichier.h"
+
+int main() {
+	Point point_a; // struct Point ==> le type de la donnée "point_a"
+}
 ```
 

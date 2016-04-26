@@ -3,13 +3,13 @@ Cours de C
 
 ## Cours
 
-* [Introduction](cours.md)
-* [Entrées et sorties standard](entree_sortie_standard.md)
-* [Opérateurs et conditions](operateurs_et_conditions.md)
-* [Tableaux et chaînes de caractères](tableaux.md)
-* [Pointeurs](pointeurs.md)
-* [Structures](structures.md)
-* [Énumérations](enumerations.md)
+1. [Introduction](cours.md)
+2. [Entrées et sorties standard](entree_sortie_standard.md)
+3. [Opérateurs et conditions](operateurs_et_conditions.md)
+4. [Tableaux et chaînes de caractères](tableaux.md)
+5. [Pointeurs](pointeurs.md)
+6. [Structures](structures.md)
+7. [Énumérations](enumerations.md)
 
 ## Exos
 

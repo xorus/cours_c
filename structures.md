@@ -42,7 +42,7 @@ int main() {
 }
 ```
 
-#### Avec les raccourcis des `typedef`
+#### Avec les alias `typedef`
 
 L'instruction `typedef` permet de créer un alias à partir d'un type de données.
 
@@ -51,10 +51,12 @@ Syntaxe : `typedef TYPE_A_REMPLACER ALIAS`, ici par exemple `typedef struct Poin
 **Dans le `.h`**
 
 ```c
-typedef struct Point {
+struct Point {
 	int x;
 	int y;
-} Point;
+};
+
+typedef struct Point Point;
 ```
 
 **Dans le fichier `.c`**

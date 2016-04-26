@@ -18,7 +18,7 @@ struct MaSuperStructure {
 	int variable2;
 	float variable3;
 	char[] jeSuisUnFou;
-}
+}; // <--- surtout ce point virgule là, on l'oublie tout le temps.
 ```
 
 Le nom de la structure commence toujours par une **majuscule**.

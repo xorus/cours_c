@@ -42,6 +42,7 @@ int main() {
 	// sale et inutile dans ce cas mais peut être pratique dans
 	// le cas d'une énumération par exemple Mois.JANVIER = 1, etc...
 	if (son == 100) {
+		// en effet, Volume.FORT vaut 100, du coup notre condition fonctionne !
 		printf("Bordel de m***e baisse le son!!");
 	}
 	

@@ -108,7 +108,7 @@ void initialiserStructure(Point* pPoint) {
 
 int main() {
 	Point monPoing;
-	initialiser(&monPoing);
+	initialiserStructure(&monPoing);
 }
 ```
 

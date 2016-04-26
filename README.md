@@ -14,3 +14,4 @@ Cours de C
 
 * [Séance 1](exercices_1.md)
 * [Séance 2](exercices_2.md)
+* [Séance 3](exercices_3.c)

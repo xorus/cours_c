@@ -9,6 +9,7 @@ Cours de C
 * [Tableaux et chaînes de caractères](tableaux.md)
 * [Pointeurs](pointeurs.md)
 * [Structures](structures.md)
+* [Énumérations](enumerations.md)
 
 ## Exos
 

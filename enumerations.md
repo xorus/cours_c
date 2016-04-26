@@ -38,7 +38,7 @@ Et du coup on peut coder comme des chiens maintenant ! Trop bien :
 ```c
 // main.c
 int main() {
-	Volume son = Volume.MOYEN;
+	Volume son = Volume.FORT;
 	// sale et inutile dans ce cas mais peut être pratique dans
 	// le cas d'une énumération par exemple Mois.JANVIER = 1, etc...
 	if (son == 100) {

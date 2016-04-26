@@ -85,3 +85,13 @@ point_a.y = 17;
 
 Le raccourci peut être pratique mais **attention à l'ordre** ! L'index 0 ira à la première variable, la 1 à la seconde, etc.
 
+## Pointeurs de structures
+
+Un pointeur se crée de la même manière que des pointeurs sur d'autres types de données :
+
+```c
+Point* point_a = NULL¡
+```
+
+BAM! Pointeur sur une structure, le futur, c'est maintenant.
+

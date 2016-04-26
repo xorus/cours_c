@@ -65,10 +65,12 @@ typedef struct Point Point;
 #include "monfichier.h"
 
 int main() {
-	Point point_a; // struct Point ==> le type de la donnée "point_a"
+	Point point_a; // WOAW SUCH RACCOURCI!
 	
 	// Utilisation : affectation
 	point_a.x = 14;
 	point_a.y = 21;
 }
 ```
+
+## Initialisation

@@ -113,3 +113,6 @@ int main() {
 ```
 
 **Attention** : l'opérateur `->` n'existe que dans le cas d'un pointeur sur une structure.
+
+Donc, pour manipuler un pointeur de structure, on peut soit faire `(*pointeurStructure).truc` soit `pointeurStructure->truc`.
+

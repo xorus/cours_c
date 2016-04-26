@@ -95,3 +95,16 @@ Point* point_a = NULL
 
 BAM! Pointeur sur une structure, le futur, c'est maintenant.
 
+Pour envoyer une structure à une fonction, on utilise l'adresse de cette structure :
+
+```c
+void initialiserStructure(Point* point) {
+	// initialiser le corps de la structure
+}
+
+int main() {
+	Point monPoing;
+	initialiser(&monPoing);
+}
+```
+

@@ -117,4 +117,5 @@ int main() {
 Donc, pour manipuler un pointeur de structure, on peut soit faire `(*pointeurStructure).truc` soit `pointeurStructure->truc`.
 
 La suite...
+
 [&raquo; Les énumérations](enumerations.md)

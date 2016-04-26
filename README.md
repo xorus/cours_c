@@ -8,6 +8,7 @@ Cours de C
 * [Opérateurs et conditions](operateurs_et_conditions.md)
 * [Tableaux et chaînes de caractères](tableaux.md)
 * [Pointeurs](pointeurs.md)
+* [Structures](structures.md)
 
 ## Exos
 

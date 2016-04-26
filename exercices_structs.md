@@ -147,3 +147,28 @@ void ex03() {
     carre_detruire(carre);
 }
 ```
+
+# Pointeurs avancés
+## Ex 1
+```c
+int main(int argc, char *argv[]) {
+    if (argc == 1) {
+        printf("pas d'arguments, connard.");
+        return -1;
+    }
+
+    int tab[argc - 1];
+    int i;
+
+    for (i = 1; i < argc; i++) {
+        tab[argc - i - 1] = atoi(argv[i]);
+    }
+
+    printf("Affichage:\n");
+    for (i = 0; i < argc - 1; i++) {
+        printf("%d ", tab[i]);
+    }
+
+    return 0;
+}
+```

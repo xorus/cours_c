@@ -24,3 +24,28 @@ int main() {
 	return 0;
 }
 ```
+
+Un truc bien avec les énumérations, c'est qu'on peut préciser des valeurs à côté des noms, par exemple :
+```
+// ...
+enum Volume {
+	FAIBLE = 20, MOYEN = 50, FORT = 100;
+}
+```
+
+Et du coup on peut coder comme des chiens maintenant ! Trop bien :
+
+```c
+// main.c
+int main() {
+	Volume son = Volume.MOYEN;
+	// sale et inutile dans ce cas mais peut être pratique dans
+	// le cas d'une énumération par exemple Mois.JANVIER = 1, etc...
+	if (son == 100) {
+		printf("Bordel de m***e baisse le son!!");
+	}
+	
+	return 0;
+}
+```
+

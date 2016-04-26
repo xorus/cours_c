@@ -18,4 +18,10 @@ struct MaSuperStructure {
 	char[] jeSuisUnFou;
 }; // <--- surtout ce point virgule là, on l'oublie tout le temps.
 ```
+```c
+struct Point {
+	int x;
+	int y;
+};
+```
 

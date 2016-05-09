@@ -51,3 +51,12 @@ On utilise pour cela la fonction `fclose(fichier)`. Où fichier est un pointeur 
 File* fichier = fopen("fichier.txt", "w");
 fclose(fichier); // fermera le fichier
 ```
+
+## 3. Écrire dans un fichier
+
+Pour écrire, il existe trois fonctions :
+
+-  `fputc()` : écrit **un caractère**
+- `fputs()` :  écrit une **chaîne de caractères**
+- `fprintf()` : écrit une **chaîne de caractères** (formatée, comme printf)
+

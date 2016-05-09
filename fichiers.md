@@ -163,3 +163,13 @@ Il existe trois fonctions pour manipuler ce curseur :
 - `fseek()` : repositionne le curseur à un endroit précis dans le fichier
 - `rewind()` : remet le curseur au début du fichier
 
+Position du curseur :
+```c
+long position = ftell(fichier);
+```
+
+Déplacer le curseur :
+```c
+
+```
+

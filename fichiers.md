@@ -145,3 +145,10 @@ while (fgets(chaine, taille_tampon, fichier) != NULL) {
 ```
 
 
+
+
+### `fscanf()`
+
+C'est comme un scanf !
+
+`fscanf(fichier, "%d", &age);` lira un entier du fichier.

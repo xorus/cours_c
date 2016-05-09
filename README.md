@@ -18,3 +18,4 @@ Cours de C
 * [Séance 2](exercices_2.md)
 * [Séance 3](exercices_3.c)
 * [Structs et pointeurs](exercices_structs.md)
+* [Fichiers](exos-fichiers.md)

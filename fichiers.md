@@ -17,4 +17,5 @@ Une fois initialisé, le pointeur contient l'adresse mémoire du début du fichi
 File* fichier = fopen("monFichier.txt", "mode d'ouverture");
 ```
 
-> Written with [StackEdit](https://stackedit.io/).
+**Attention**, sur windows, les `\` dans les chemins de fichier deviennent des `/`.
+

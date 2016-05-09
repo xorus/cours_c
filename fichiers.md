@@ -25,8 +25,14 @@ File* fichier = fopen("monFichier.txt", "mode d'ouverture");
 | r | Read : Lecture seule, si le fichier n'existe pas, il est crée |
 | w | Write : Écriture, si le fiichier n'existe pas, il est crée. Si il existe déjà, il est *écrasé*. |
 | a | Append : Écriture, fichier crée si non existant, contenu ajouté à la fin si déja existant |
-|---|---|
 
 On ne peut mettre qu'un seul mode à la fois.
 
-Pour pouvoir par exemple 
+Pour pouvoir par exemple ouvrir un fichier en lecture et en écriture, on peut utiliser des variations : 
+
+| mode | ce que ça fait |
+|---|---|
+| r+ | Lecture/Écriture : le fichier doit déjà exister |
+| w+ | Lecture/Écriture : fichier écrasé si déjà existant |
+| a+ | Lecture/Écriture : contenu ajouté à la fin |
+

@@ -170,6 +170,20 @@ long position = ftell(fichier);
 
 Déplacer le curseur :
 ```c
+fseek(fichier, deplacement, position);
+```
+Fichier: pointeur de fichier
+Deplacement: nb positif ou négatif représentant le déplacement (négatif = en arrière, positif = en avant)
+Position (long) : positino à partir de la quelle on se déplace
 
+| Constante pour position | Description |
+| -- | -- |
+| SEEK_SET | début du fichier |
+| SEEL_CUR | position actuelle |
+| SEEK_END| fin du fichier |
+
+Revenir au début du fichier :
+```c
+rewind(fichier); 
 ```
 

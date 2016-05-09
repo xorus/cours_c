@@ -116,8 +116,6 @@ while ((carac = fgetc(file)) != EOF) {
 
 ### `fgets()`
 
-Si il n'y à un à lire, la fonction renvoie EOF (pour End Of File).
-
 ```c
 FILE *fichier = fopen("fichier", "r");
 int taille_tampon = 500; // lire par paquets de 500 caractères max

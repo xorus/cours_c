@@ -60,7 +60,6 @@ Pour écrire, il existe trois fonctions :
 - `fputs()` :  écrit une **chaîne de caractères**
 - `fprintf()` : écrit une **chaîne de caractères** (formatée, comme printf)
 
-
 ```c
 File* fichier = fopen("fichier.txt", "w");
 int variable = 69;
@@ -78,3 +77,25 @@ fprintf("Un nombre au pif : %d", fichier, variable);
 
 fclose(fichier);
 ```
+
+## 4. Lire dans un fichier
+
+- `fgetc()` : lit un caractère
+- `fgets()` : lit une chaine de caractères (tableau de caractères)
+- `fscanf()` : lit une chaîne formatée (comme un scanf)
+
+### `fgetc()`
+Renvoie un nombre entier : le caractère lu.
+
+Si il n'y à un à lire, la fonction renvoie EOF (pour End Of File).
+
+```c
+File *fichier = fopen("fichier", "r");
+char carac;
+
+do {
+	carac = fgetc(fichier);
+	fprintf("%c", carac);
+} while (carac != EOF);
+```
+

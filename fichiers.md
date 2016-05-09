@@ -121,16 +121,18 @@ Si il n'y à un à lire, la fonction renvoie EOF (pour End Of File).
 ```c
 FILE *fichier = fopen("fichier", "r");
 int taille_tampon = 500; // lire par paquets de 500 caractères max
-char tab[taille_tampon] = {'\0'}; // on initialise avec le caractère nul
+char chaine[taille_tampon] = {'\0'}; // on initialise avec le caractère nul
 
-do {
-	carac = fgetc(fichier);
-	fprintf("%c", carac);
-} while (carac != EOF);
+if (FILE == NULL) {
+	printf("Impossible d'ouvrir le fichier.");
+	return;
+}
 
-// ou (n'affichera pas le symbole ? sous UNIX)
-while ((carac = fgetc(file)) != EOF) {
-    printf("%c", carac);
-};
+fgets(chaine, taille_max, fichier);
+printf("%s", chaine);
 ```
+
+Inconvénient : cela ne lira que 500 caractères. On doit boucler !
+
+
 

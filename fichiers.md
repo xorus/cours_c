@@ -86,7 +86,11 @@ fclose(fichier);
 
 ### Vérifier que le fichier est bien ouvert
 ```c
-
+if (fichier != NULL) {
+  // le fichier est ouvert
+} else {
+  // on à pas pu ouvrir le fichier, le pointeur est NULL
+}
 ```
 
 ### `fgetc()`

@@ -144,15 +144,22 @@ while (fgets(chaine, taille_tampon, fichier) != NULL) {
 }
 ```
 
-
-
-
 ### `fscanf()`
 
 C'est comme un scanf !
 
 `fscanf(fichier, "%d", &age);` lira un entier du fichier et l'enregistrera dans age.
 
-`fscanf` ne lit que ligne par ligne : il s'arrête quand il rencontre une fin de ligne.
+`fscanf` ne lit que ligne par ligne : il s'arrête quand il rencontre une fin de ligne (\n).
 
+
+## 5. Manipulation du curseur
+
+Toutes le fonctions de lecture/écriture vues précédemment manipulent automatiquement un *curseur virtuel*.
+
+Il existe trois fonctions pour manipuler ce curseur : 
+
+- `ftell()` : indique la position du curseur dans le fichier
+- `fseek()` : repositionne le curseur à un endroit précis dans le fichier
+- `rewind()` : remet le curseur au début du fichier
 

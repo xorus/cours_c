@@ -128,7 +128,7 @@ if (FILE == NULL) {
 	return;
 }
 
-fgets(chaine, taille_max, fichier);
+fgets(chaine, taille_tampon, fichier);
 printf("%s", chaine);
 ```
 
@@ -139,7 +139,7 @@ FILE *fichier = fopen("fichier", "r");
 int taille_tampon = 500;
 char chaine[taille_tampon] = {'\0'};
 
-while (fgets(chaine, taille_max, fichier) != NULL) {
+while (fgets(chaine, taille_tampon, fichier) != NULL) {
     printf("%s", chaine);
 }
 ```

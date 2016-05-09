@@ -11,7 +11,10 @@ Une fois initialisé, le pointeur contient l'adresse mémoire du début du fichi
 
 ## 1. Ouverture du fichier
 
-`fopen()` renvoie un pointeur 
+`fopen()` renvoie un pointeur `File` sur le fichier spécifié.
 
+```c
+File* fichier = fopen("monFichier.txt", "mode d'ouverture");
+```
 
 > Written with [StackEdit](https://stackedit.io/).

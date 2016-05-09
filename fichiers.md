@@ -121,7 +121,7 @@ Renvoie un pointeur NULL si il n'a plus rien à lire.
 ```c
 FILE *fichier = fopen("fichier", "r");
 int taille_tampon = 500; // lire par paquets de 500 caractères max
-char chaine[taille_tampon] = {'\0'}; // on initialise avec le caractère nul
+char chaine[500] = {'\0'}; // on initialise avec le caractère nul
 
 if (FILE == NULL) {
 	printf("Impossible d'ouvrir le fichier.");
@@ -137,7 +137,7 @@ Inconvénient : cela ne lira que 500 caractères. On doit boucler !
 ```c
 FILE *fichier = fopen("fichier", "r");
 int taille_tampon = 500;
-char chaine[taille_tampon] = {'\0'};
+char chaine[500] = {'\0'};
 
 while (fgets(chaine, taille_tampon, fichier) != NULL) {
     printf("%s", chaine);

@@ -60,3 +60,21 @@ Pour écrire, il existe trois fonctions :
 - `fputs()` :  écrit une **chaîne de caractères**
 - `fprintf()` : écrit une **chaîne de caractères** (formatée, comme printf)
 
+
+```c
+File* fichier = fopen("fichier.txt", "w");
+int variable = 69;
+
+// Écrire HEY avec fputc
+fputc('H', fichier);
+fputc('E', fichier);
+fputc('Y', fichier);
+
+// Écrire Coucou avec fputs
+fputs("Coucou", fichier);
+
+// Acrobaties
+fprintf("Un nombre au pif : %d", fichier, variable);
+
+fclose(fichier);
+```

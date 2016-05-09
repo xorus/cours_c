@@ -10,6 +10,7 @@ Cours de C
 5. [Pointeurs](pointeurs.md)
 6. [Structures](structures.md)
 7. [Énumérations](enumerations.md)
+8. [Fichiers](fichiers.md)
 
 ## Exos
 

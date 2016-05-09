@@ -97,5 +97,10 @@ do {
 	carac = fgetc(fichier);
 	fprintf("%c", carac);
 } while (carac != EOF);
+
+// ou (n'affichera pas le symbole ? sous UNIX)
+while ((carac = fgetc(file)) != EOF) {
+    printf("%c", carac);
+};
 ```
 

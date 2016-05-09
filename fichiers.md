@@ -153,4 +153,6 @@ C'est comme un scanf !
 
 `fscanf(fichier, "%d", &age);` lira un entier du fichier et l'enregistrera dans age.
 
+`fscanf` ne lit que ligne par ligne : il s'arrête quand il rencontre une fin de ligne.
+
 

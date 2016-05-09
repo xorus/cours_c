@@ -84,6 +84,11 @@ fclose(fichier);
 - `fgets()` : lit une chaine de caractères (tableau de caractères)
 - `fscanf()` : lit une chaîne formatée (comme un scanf)
 
+### Vérifier que le fichier est bien ouvert
+```c
+
+```
+
 ### `fgetc()`
 Renvoie un nombre entier : le caractère lu.
 
@@ -92,6 +97,27 @@ Si il n'y à un à lire, la fonction renvoie EOF (pour End Of File).
 ```c
 FILE *fichier = fopen("fichier", "r");
 char carac;
+
+do {
+	carac = fgetc(fichier);
+	fprintf("%c", carac);
+} while (carac != EOF);
+
+// ou (n'affichera pas le symbole ? sous UNIX)
+while ((carac = fgetc(file)) != EOF) {
+    printf("%c", carac);
+};
+```
+
+
+### `fgets()`
+
+Si il n'y à un à lire, la fonction renvoie EOF (pour End Of File).
+
+```c
+FILE *fichier = fopen("fichier", "r");
+int taille_tampon = 500; // lire par paquets de 500 caractères max
+char tab[taille_tampon] = {'\0'}; // on initialise avec le caractère nul
 
 do {
 	carac = fgetc(fichier);

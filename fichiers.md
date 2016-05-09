@@ -132,5 +132,14 @@ printf("%s", chaine);
 
 Inconvénient : cela ne lira que 500 caractères. On doit boucler !
 
+```c
+FILE *fichier = fopen("fichier", "r");
+int taille_tampon = 500;
+char chaine[taille_tampon] = {'\0'};
+
+while (fgets(chaine, taille_max, fichier) != EOF) {
+    printf("%s", chaine);
+}
+```
 
 

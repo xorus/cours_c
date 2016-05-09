@@ -1,20 +1,20 @@
 Fichiers
 ======
 
-Pour manipuler un fichier, on maipule un pointeur sur la structure *File*.
+Pour manipuler un fichier, on maipule un pointeur sur la structure *FILE*.
 
 ```c
-File* fichier;
+FILE* fichier;
 ```
 
 Une fois initialisé, le pointeur contient l'adresse mémoire du début du fichier.
 
 ## 1. Ouverture du fichier
 
-`fopen()` renvoie un pointeur `File` sur le fichier spécifié.
+`fopen()` renvoie un pointeur `FILE` sur le fichier spécifié.
 
 ```c
-File* fichier = fopen("monFichier.txt", "mode d'ouverture");
+FILE* fichier = fopen("monFichier.txt", "mode d'ouverture");
 ```
 
 **Attention**, sur windows, les `\` dans les chemins de fichier deviennent des `/`.
@@ -48,7 +48,7 @@ Donc Read : lit, Write : écrase, Append : ajoute, et **+** pour faire la même 
 On utilise pour cela la fonction `fclose(fichier)`. Où fichier est un pointeur sur le fichier à fermer.
 
 ```c
-File* fichier = fopen("fichier.txt", "w");
+FILE* fichier = fopen("fichier.txt", "w");
 fclose(fichier); // fermera le fichier
 ```
 
@@ -61,7 +61,7 @@ Pour écrire, il existe trois fonctions :
 - `fprintf()` : écrit une **chaîne de caractères** (formatée, comme printf)
 
 ```c
-File* fichier = fopen("fichier.txt", "w");
+FILE* fichier = fopen("fichier.txt", "w");
 int variable = 69;
 
 // Écrire HEY avec fputc
@@ -90,7 +90,7 @@ Renvoie un nombre entier : le caractère lu.
 Si il n'y à un à lire, la fonction renvoie EOF (pour End Of File).
 
 ```c
-File *fichier = fopen("fichier", "r");
+FILE *fichier = fopen("fichier", "r");
 char carac;
 
 do {

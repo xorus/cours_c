@@ -116,6 +116,8 @@ while ((carac = fgetc(file)) != EOF) {
 
 ### `fgets()`
 
+Renvoie un pointeur NULL si il n'a plus rien à lire.
+
 ```c
 FILE *fichier = fopen("fichier", "r");
 int taille_tampon = 500; // lire par paquets de 500 caractères max
@@ -137,7 +139,7 @@ FILE *fichier = fopen("fichier", "r");
 int taille_tampon = 500;
 char chaine[taille_tampon] = {'\0'};
 
-while (fgets(chaine, taille_max, fichier) != EOF) {
+while (fgets(chaine, taille_max, fichier) != NULL) {
     printf("%s", chaine);
 }
 ```
